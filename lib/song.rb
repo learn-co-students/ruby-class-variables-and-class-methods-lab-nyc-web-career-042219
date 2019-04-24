@@ -17,12 +17,7 @@ class Song
     @@genres << self.genre
     @@artists << self.artist
 
-    # @@genres.map do |song_genre|
-    #   if @@genres_hash[song_genre] = 1
-    #     @@genres_hash[song_genre] += 1
-    #   else
-    #     @@genres_hash[genre] = 1
-    #  end
+  
    end
 
 
