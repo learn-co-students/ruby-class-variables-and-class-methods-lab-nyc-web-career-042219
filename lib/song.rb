@@ -1,5 +1,7 @@
 require "pry"
+
 class Song
+
 attr_accessor :name, :artist, :genre
 
 @@count = 0
@@ -29,14 +31,19 @@ attr_accessor :name, :artist, :genre
 
   def self.genre_count
     hash = Hash.new(0)
-    @@genres.each {|genre| hash[genre] += 1}
-    return hash
+    @@genres.each do |genre|
+      hash[genre] += 1
+    end
+    hash
   end
 
   def self.artist_count
     hash = Hash.new(0)
-    @@artists.each {|artist| hash[artist] += 1}
-    return hash
+    @@artists.each do |artist|
+      hash[artist] += 1
+    end
+    hash
   end
+
 
 end
