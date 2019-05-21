@@ -31,17 +31,13 @@ attr_accessor :name, :artist, :genre
 
   def self.genre_count
     hash = Hash.new(0)
-    @@genres.each do |genre|
-      hash[genre] += 1
-    end
+    @@genres.each {|genre| hash[genre] += 1}
     hash
   end
 
   def self.artist_count
     hash = Hash.new(0)
-    @@artists.each do |artist|
-      hash[artist] += 1
-    end
+    @@artists.each {|artist|hash[artist] += 1}
     hash
   end
 
